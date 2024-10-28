@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body{
+  text-align:center;
+  background-color:white;
+}
+#title{
+  font-size:50px;
+color:blue;    
+}
+#hi{
+  width:2000px
+}
+#batton{
+background-color: pink;
+color: white;
+text-shadow: 5px;
+size: 10px;
+cursor: pointer;
+border-radius: 10px
+
+}
+    </style>
+    <title>farms</title>
+    <p id="title">FARMING</p>
+    <p id="lenght">enter the lenght now</p>
+    <input id="input1" type="number" class="ibox">
+    <input type="button" id="batton" value="calculate"onclick="calculate()">
+    <p id="area">area:</p>
+    <p id="area-result"></p>
+    <p id="buy">lenght to buy:</p>
+    <p id="buy-result"></p>
+
+    <script>var number_1 = Number(document.getElementById("input1").value);
+
+
+        function calculate() {
+        number_1 = Number(document.getElementById("input1").value);
+        
+        var area = number_1 * number_1;
+        var perimeter  = 4 * number_1;
+        
+        document.getElementById("area-result").innerHTML = area;
+        
+        document.getElementById("buy-result").innerHTML = perimeter;
+          
+          
+        }
+        </script>
+    </body>
+    </html>
+  
